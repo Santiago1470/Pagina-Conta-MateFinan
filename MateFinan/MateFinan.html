@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo.css">
+    <title>Matematicas Financieras</title>
+</head>
+<body>
+    <!--INICIO PARA BARRA FIJA-->
+    <header>
+        <img src="logo2.png" alt="logo" align="right">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../Contabilidad/Conta.html">Contabilidad</a></li>
+                <li><a href="MateFinan.html">Matematicas Financieras</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--FIN PARA BARRA FIJA-->
+    <section class="contenido wrapper">
+	    <table border="2">
+            <thead>Soluciones de Interes compuesto</thead>
+            <tr>
+                <td onclick="valorFut();">Valor Futuro (S)</td>
+                <td onclick="valorPre();">Valor Presente (P)</td>
+                <td onclick="interesCom();">Interes compuesto (i)</td>
+                <td onclick="tiempo();">Tiempo (n)</td>
+            </tr>
+            <tr>
+                <td id="valorFuturo"><br/></td>
+                <td id="valorPresente"></td>
+                <td id="interesCompuesto"></td>
+                <td id="tiempo"></td>
+            </tr>
+        </table>
+        <table border="2">
+            <thead>Soluciones de Interes simple</thead>
+            <tr>
+                <td onclick="valorFutSim();">Valor Futuro (S)</td>
+                <td onclick="valorPreS();">Valor Presente (P)</td>
+                <td onclick="interesSimp();">Interes Simple (i)</td>
+                <td onclick="tiempoSimple();">Tiempo (n)</td>
+            </tr>
+            <tr>
+                <td id="valFuturoSim"><br/></td>
+                <td id="valPresenSim"></td>
+                <td id="interesSimple"></td>
+                <td id="tiempoSim"></td>
+            </tr>
+        </table>
+        <table border="2">
+            <thead>Cuadro de procedimiento (interés compuesto)</thead>
+            <tr>
+                <th>Procedimiento valor futuro</th>
+                <td id="qh"><br/></td>
+            </tr>
+            <tr>
+                <th>Procedimiento valor presente</th>
+                <td id="proce"><br/></td>
+            </tr>
+            <tr>
+                <th>Procedimiento del interés compuesto</th>
+                <td id="proceInte"><br/></td>
+            </tr>
+            <tr>
+                <th>Procedimiento del tiempo</th>
+                <td id="proceTiempo"><br/></td>
+            </tr>
+        </table>
+        <table border="2">
+            <thead>Cuadro de procedimiento (interés simple)</thead>
+            <tr>
+                <th>Procedimiento valor futuro</th>
+                <td id="qh"><br/></td>
+            </tr>
+            <tr>
+                <th>Procedimiento valor presente</th>
+                <td id="proce"><br/></td>
+            </tr>
+            <tr>
+                <th>Procedimiento del interés simple</th>
+                <td id="proceInte"><br/></td>
+            </tr>
+            <tr>
+                <th>Procedimiento del tiempo</th>
+                <td id="proceTiempo"><br/></td>
+            </tr>
+        </table>
+        
+    </section>
+    
+    <script src="mateF.js"></script>
+</body>
+</html>

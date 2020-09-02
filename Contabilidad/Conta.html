@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Santiago Jair Torres Rivera">
+    <link rel="stylesheet" href="../estilo.css">
+    <link rel="stylesheet" href="diseño.css">
+    <title>Contabilidad</title>
+</head>
+<body id="cuerpo">
+    <header>
+        <img src="logo2.png" alt="logo" align="right">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="Conta.html">Contabilidad</a></li>
+                <li><a href="../MateFinan/MateFinan.html">Matematicas Financieras</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contenido wrapper">
+	    <table border="2" id="tab-dedi">
+            <thead>Depreciación (Días)</thead>
+            <tr>
+                <td>Fecha inicio o compra</td>
+                <td>Fecha fin</td>
+                <td>Dias totales</td>
+            </tr>
+            <tr>
+                <td id="fechaInicio"><br/></td>
+                <td id="fechaFin"></td>
+                <td id="diasTotales"></td>
+            </tr>
+            <button onclick="resolver();">Operar :)</button>
+        </table>
+        <table border="2" id="tab-depre">
+            <thead>Depreciación</thead>
+            <button onclick="DePa();">Operar ;)</button>
+            <tr>
+                <td>Tiempo</td>
+                <td>Vida Útil del objeto</td>
+                <td>DEP</td>
+            </tr>
+            <tr>
+                <td id="tiempo"><br/></td>
+                <td id="vidaUtil"></td>
+                <td id="DEP"></td>
+            </tr>
+        </table>
+        <table border="2" id="tab-medi">
+            <thead>Medición</thead>
+            <tr>
+                <td>5160 Depreciación</td>
+                <td>1592 Depreciación Acumulada</td>
+            </tr>
+            <tr>
+                <td id="cuenta51"><br/></td>
+                <td id="cuenta15"></td>
+            </tr>
+        </table>
+        <table border="2" id="tab-reco">
+            <thead>Reconocimiento</thead>
+            <button onclick="recono();">Operar ♠☻</button>
+            <tr>
+                <td>Compra de objeto (Base)</td>
+                <td>IVA Descont.</td>
+                <td>Rete.F. 2,5%</td>
+                <td>Rete.ICA 11,04% * 1.000</td>
+                <td>CxP (V.Obejto+IVA-Rete.F.-Rete.ICA)</td>
+            </tr>
+            <tr>
+                <td id="compObj"><br/></td>
+                <td id="IVA"></td>
+                <td id="reteF"></td>
+                <td id="reteI"></td>
+                <td id="cXp"></td>
+            </tr>
+        </table>
+    </section>
+    
+    
+    <script src="cont.js"></script>
+    <script src="contaReco.js"></script>
+</body>
+</html>
