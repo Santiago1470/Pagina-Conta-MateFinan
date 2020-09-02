@@ -1,4 +1,5 @@
 
+
 body
 {
     font-family: 'IBM Plex Sans', sans-serif;
@@ -62,4 +63,10 @@ nav {
 a
 {
 text-decoration:none;
+}
+
+hr
+{
+  height: 5px;
+  background-color: black;
 }
