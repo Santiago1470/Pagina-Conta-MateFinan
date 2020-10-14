@@ -22,3 +22,16 @@
 {
     background-color: white;
 }
+
+#contTodo
+{
+  background-color: rgb(241, 231, 212);
+  margin-left: 17%;
+  margin-right: 5%;
+}
+
+.parrCont
+{
+  color: black;
+  margin: 30px;
+}
