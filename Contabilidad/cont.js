@@ -1,5 +1,4 @@
 
-
 var fechaInic = document.getElementById("fechaInicio");
 var fechaFn = document.getElementById("fechaFin");
 var diasTo = document.getElementById("diasTotales");
@@ -116,9 +115,3 @@ function DePa()
 20, 03, 2019, 30, 07, 2020
 4000000, 490, 3600
 */
-
-
-
-
-
-
