@@ -25,3 +25,22 @@ table
     margin-left: 80px;
     margin-right: 30px;
 }
+
+#indice
+{
+  background-color: rgb(241, 231, 212);
+  margin-left: 17%;
+  margin-right: 50%;
+  box-shadow: rgb(0, 0, 0) 5px 4px 5px;
+  border-radius: 5px;
+}
+
+#ind
+{
+  font-weight: bold;
+}
+
+#SoluIntSim
+{
+  color: black;
+}
