@@ -33,65 +33,9 @@
             </dd>
             </dl>
         </aside>
-	    <table border="2" id="tab-dedi">
-            <thead>Depreciación (Días)</thead>
-            <tr>
-                <td>Fecha inicio o compra</td>
-                <td>Fecha fin</td>
-                <td>Dias totales</td>
-            </tr>
-            <tr>
-                <td id="fechaInicio"><br/></td>
-                <td id="fechaFin"></td>
-                <td id="diasTotales"></td>
-            </tr>
-            <button onclick="resolver();">Operar :)</button>
-        </table>
-        <table border="2" id="tab-depre">
-            <thead>Depreciación</thead>
-            <button onclick="DePa();">Operar ;)</button>
-            <tr>
-                <td>Tiempo</td>
-                <td>Vida Útil del objeto</td>
-                <td>DEP</td>
-            </tr>
-            <tr>
-                <td id="tiempo"><br/></td>
-                <td id="vidaUtil"></td>
-                <td id="DEP"></td>
-            </tr>
-        </table>
-        <table border="2" id="tab-medi">
-            <thead>Medición</thead>
-            <tr>
-                <td>5160 Depreciación</td>
-                <td>1592 Depreciación Acumulada</td>
-            </tr>
-            <tr>
-                <td id="cuenta51"><br/></td>
-                <td id="cuenta15"></td>
-            </tr>
-        </table>
-        <table border="2" id="tab-reco">
-            <thead>Reconocimiento</thead>
-            <button onclick="recono();">Operar ♠☻</button>
-            <tr>
-                <td>Compra de objeto (Base)</td>
-                <td>IVA Descont.</td>
-                <td>Rete.F. 2,5%</td>
-                <td>Rete.ICA 11,04% * 1.000</td>
-                <td>CxP (V.Obejto+IVA-Rete.F.-Rete.ICA)</td>
-            </tr>
-            <tr>
-                <td id="compObj"><br/></td>
-                <td id="IVA"></td>
-                <td id="reteF"></td>
-                <td id="reteI"></td>
-                <td id="cXp"></td>
-            </tr>
-        </table>
-        <br/><br/>
+	    
     <div id="contTodo">
+        <br/>
         <h1 align="center">¿Qué es Contabilidad?</h1>
         <br/>
         <br/>
@@ -109,10 +53,165 @@
             <p class="parrCont">
             La contabilidad está presente en la vida de los hombres desde hace miles de años, fue utilizada de manera más rudimentaria en las grandes civilizaciones como Egipto o Roma, pero la contabilidad tal y como la conocemos hoy, tuvo su origen en la publicación en Italia de la obra “Summa de Arithmetica, Geometría, Proportioni e Proportionalita”’ de Luca Pacioli, que se dedicó a describir métodos contables de los comerciantes venecianos, usos mercantiles, contratos y prácticas de intereses y cambio; este documento estableció la contabilidad de partida doble, el precedente de lo que hoy se conoce como “debe y haber” en la jerga de la contabilidad. Pero, dado que las antiguas repúblicas y microestados italianos fueron los grandes promotores del comercio en siglos previos, estas enseñanzas se adaptaron y modificaron con el devenir del tiempo, sin perder su esencia original.
             De este modo, si hablamos de contabilidad, nos estamos refiriendo a una ciencia -dado que brinda conocimiento-, a una técnica -en la medida en que trabaja con procedimientos y sistemas-, a un sistema de información -dado que puede captar, procesar y ofrecer conclusiones acerca de piezas de información- y, finalmente, a una tecnología social —porque conjuga saberes de la ciencia para resolver problemas concretos de la vida en sociedad—.</p>
-            
-        </div> 
+            <br/>
+        </div>
+        <br/>
+        <div class="indi">
+            <ol id="indice">
+                <br/>
+                <dt align="center" id="ind">Indice</dt>
+                <br/>
+                <li><a href="#depreciacion">Realizar depreciación (Días).</a></li>
+                <li><a href="#depreci">Realizar Depreciación.</a></li>
+                <li><a href="#verMedic">Ver Medición.</a></li>
+                <li><a href="#verReco">Ver Reconocimiento.</a></li>
+                <li><a href="#dePsuD">Depreciación por suma de digitos para autos.</a></li>
+                <li><a href="#dePsuD2">Depreciación por suma de dígitos para casas y oficinas</a></li>
+                <br/>
+            </ol>
+        </div>
+        <br/><br/>
+        <table border="2" id="tab-dedi">
+            <tr>
+                <th colspan="3" id="depreciacion">Depreciación (Días)<button onclick="resolver();">Operar :)</button></th>
+            </tr>
+            <tr>
+                <td>Fecha inicio o compra</td>
+                <td>Fecha fin</td>
+                <td>Dias totales</td>
+            </tr>
+            <tr>
+                <td id="fechaInicio"><br/></td>
+                <td id="fechaFin"></td>
+                <td id="diasTotales"></td>
+            </tr>
+        </table>
+        <br/>
+        <table border="2" id="tab-depre">
+            <tr>
+                <th colspan="3" id="depreci">Depreciación<button onclick="DePa();">Operar ;)</button></th>
+            </tr>
+            <tr>
+                <td>Tiempo</td>
+                <td>Vida Útil del objeto</td>
+                <td>DEP</td>
+            </tr>
+            <tr>
+                <td id="tiempo"><br/></td>
+                <td id="vidaUtil"></td>
+                <td id="DEP"></td>
+            </tr>
+        </table>
+        <br/>
+        <table border="2" id="tab-medi">
+            <tr>
+                <th colspan="2" id="verMedic">Medición</th>
+            </tr>
+            <tr>
+                <td>5160 Depreciación</td>
+                <td>1592 Depreciación Acumulada</td>
+            </tr>
+            <tr>
+                <td id="cuenta51"><br/></td>
+                <td id="cuenta15"></td>
+            </tr>
+        </table>
+        <br/>
+        <table border="2" id="tab-reco">
+            <tr>
+                <th colspan="5" id="verReco">Reconocimiento<button onclick="recono();">Operar ♠☻</button></th>
+            </tr>
+            <tr>
+                <td>Compra de objeto (Base)</td>
+                <td>IVA Descont.</td>
+                <td>Rete.F. 2,5%</td>
+                <td>Rete.ICA 11,04% * 1.000</td>
+                <td>CxP (V.Obejto+IVA-Rete.F.-Rete.ICA)</td>
+            </tr>
+            <tr>
+                <td id="compObj"><br/></td>
+                <td id="IVA"></td>
+                <td id="reteF"></td>
+                <td id="reteI"></td>
+                <td id="cXp"></td>
+            </tr>
+        </table>
+
+        <br/><br/><br/>
+
+        <table border="2" class="tabDepDigi">
+            <tr>
+                <th colspan="4" id="dePsuD">Depreciación por suma de digitos (Autos)</th>
+            </tr>
+            <tr>
+                <td>Valor del Objeto</td>
+                <td>IVA<button onclick="sacViTs();">Operar</button></td>
+                <td>Total</td>
+                <td>Suma de vida Útil<button onclick="sacarSumVu();">Operar</button></td>
+            </tr>
+            <tr>
+                <td id="valorObjeto"><br/></td>
+                <td id="iva"></td>
+                <td id="total"></td>
+                <td id="sumaViUti"></td>
+            </tr>
+        </table>
+        <table border="2" class="tabDepDigi">
+            <tr>
+                <th colspan="1">Procedimiento<button onclick="realiProc();">Operar</button></th>
+            </tr>
+            <tr>
+                <td id="escriPro"><br/></td>
+            </tr>
+        </table>
+        <table border="2" class="tabDepDigi">
+            <tr>
+                <th colspan="1">MiniCalculadora☻ (Para sacar el Total)<button onclick="ejecutarCalc();">Operar</button></th>
+            </tr>
+            <tr>
+                <td id="escrOperacisTot"><br/></td>
+            </tr>
+        </table>
+        
+        <br/><br/><br/>
+
+        <table border="2" class="tabDepDigi">
+            <tr>
+                <th colspan="4" id="dePsuD2">Depreciación por suma de digitos (Casas u oficinas)</th>
+            </tr>
+            <tr>
+                <td>Valor del Objeto<button onclick="sacConsYterre();">Operar</button></td>
+                <td>Construcción (%)</td>
+                <td>Terreno (%)</td>
+                <td>Suma de vida Útil<button onclick="sacarSumDig();">Operar</button></td>
+            </tr>
+            <tr>
+                <td id="valObje"><br/></td>
+                <td id="const"></td>
+                <td id="terre"></td>
+                <td id="sumaDig"></td>
+            </tr>
+        </table>
+        <table border="2" class="tabDepDigi">
+            <tr>
+                <th colspan="1">Procedimiento<button onclick="realiProcedimiento();">Operar</button></th>
+            </tr>
+            <tr>
+                <td id="escProce"><br/></td>
+            </tr>
+        </table>
+        <table border="2" class="tabDepDigi">
+            <tr>
+                <th colspan="1">MiniCalculadora☻ (Para sacar el Total)<button onclick="ejeCalc();">Operar</button></th>
+            </tr>
+            <tr>
+                <td id="escrOperacionesTot"><br/></td>
+            </tr>
+        </table>
     </section>
+    <script src="depSum2.js"></script>
     <script src="cont.js"></script>
     <script src="contaReco.js"></script>
+    <script src="depSumDigi.js"></script>
 </body>
 </html>
