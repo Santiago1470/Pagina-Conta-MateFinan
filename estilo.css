@@ -56,13 +56,14 @@ body
    width: auto;
    margin: auto;
    overflow:hidden;
-   height: 1200px;
+   height: 2000px;
  }
  
  
  a
  {
   text-decoration: none;
+  color: black;
  }
  
  hr
@@ -125,4 +126,9 @@ p
 .indice
 {
   text-decoration: none;
+}
+
+#conti
+{
+  color: blue;
 }
