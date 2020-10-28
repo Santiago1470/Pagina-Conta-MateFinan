@@ -35,8 +35,52 @@
             </dd>
             </dl>
         </aside>
-	    <table border="2">
-            <thead>Soluciones de Interes compuesto</thead>
+        <div id="mateFinanTodo">
+            <br/>
+            <h1 align="center"><a>¿Qué es Matematicas Financieras?</a></h1>
+            <br/>
+            <br/>
+            <p class="parrMatFin">Las matemáticas financieras son el campo de las matemáticas aplicadas que analizan, valoran y calculan materias relacionadas con los mercados financieros, y especialmente, el valor del dinero en el tiempo. Se ocupan del cálculo del valor, el tipo de interés o rentabilidad de los distintos productos que existen en los mercados financieros como depósitos, bonos, préstamos, descuentos de papel, valoración de acciones o cálculos sobre seguros, entre otras. <br/>
+            Las matemáticas financieras se centran en estudiar el valor del dinero en el tiempo combinando el capital, la tasa y el tiempo para obtener un rendimiento o interés, a través de métodos de evaluación que permiten tomar decisiones de inversión. Entre las herramientas más utilizadas para dichos análisis, encontramos la probabilidad, la estadística y el cálculo diferencial.
+            </p>
+            <h2>Términos que debes conocer</h2>
+            
+            <p class="parrMatFin">
+            Si decides estudiar el máster en finanzas es necesario que conozcas ciertos términos y así poder hablar la jerga específica de esta rama de las matemáticas.
+            <p id="parrafo">
+            ➤Las derivadas climáticas: Los productos financieros y su flujo dependen de un evento climático (aplicadas a menudo a las empresas agrícolas y turísticas)
+            <br/>
+            ➤Las derivadas de crédito: Los productos y su flujo dependen de eventos de crédito
+            <br/>
+            ➤Los intereses de los préstamos bancarios: Fluctúan en función del coste del dinero y del riesgo de impago del prestatario.
+            <br/>
+            ➤El coste del dinero: Pedir un préstamo tiene un coste que depende de lo que se denomina la curva de tipos de interés. Esta famosa curva va en función de la moneda y la fija generalmente el mercado.
+            <br/>
+            ➤El coste del riesgo: Es la manera en la que la banca compensa el riesgo de impago. Se proponen dos formas, la hipoteca y la prima de riesgo adicional.
+            <br/>
+            ➤Los intereses: Existen 2 tipos de intereses que se incluyen en la composición de las matemáticas financieras: el interés simple que ilustra la noción de interés en el sentido propio, se calcula sobre la base del total de un capital inicial, y el interés compuesto que consiste en tomar en cuenta como base de cálculo el capital inicial y los importes de los intereses que ha ido generando la inversión.
+            </p>
+            Estos son los términos más básicos de matemáticas financieras que se estudian en un máster en finanzas cuantitativas. Pero por si aún te quedan  dudas vamos a contarte con más detalle cómo es el máster.
+            </p>
+            <br/>
+        </div>
+        <br/>
+        <div class="indi">
+        <ol id="indice">
+            <br/>
+            <dt align="center" id="ind">Indice</dt>
+            <br/>
+            <li><a href="#SoluIntComp">Resolver ejercicios de Interés Compuesto.</a></li>
+            <li><a href="#SoluIntSim">Resolver ejercicios de Interés Simple.</a></li>
+            <li><a href="#convTasas">Conversión de Tasas Efectivas (interés compuesto).</a></li>
+            <br/>
+        </ol>
+    </div>
+        <br/><br/>
+	    <table border="2" class="comp">
+            <tr align="center">
+                <th colspan="4" id="SoluIntComp">Resolver ejercicios de Interés Compuesto</th>
+            </tr>
             <tr>
                 <td onclick="valorFut();">Valor Futuro (S)</td>
                 <td onclick="valorPre();">Valor Presente (P)</td>
@@ -50,23 +94,10 @@
                 <td id="tiempo"></td>
             </tr>
         </table>
-        <table border="2">
-            <thead>Soluciones de Interes simple</thead>
+        <table border="2" class="comp">
             <tr>
-                <td onclick="valorFutSim();">Valor Futuro (S)</td>
-                <td onclick="valorPreS();">Valor Presente (P)</td>
-                <td onclick="interesSimp();">Interes Simple (i)</td>
-                <td onclick="tiempoSimple();">Tiempo (n)</td>
+                <th colspan="2">Cuadro de procedimiento (interés compuesto)</th>
             </tr>
-            <tr>
-                <td id="valFuturoSim"><br/></td>
-                <td id="valPresenSim"></td>
-                <td id="interesSimple"></td>
-                <td id="tiempoSim"></td>
-            </tr>
-        </table>
-        <table border="2">
-            <thead>Cuadro de procedimiento (interés compuesto)</thead>
             <tr>
                 <th>Procedimiento valor futuro</th>
                 <td id="qh"><br/></td>
@@ -84,55 +115,66 @@
                 <td id="proceTiempo"><br/></td>
             </tr>
         </table>
-        <table border="2">
-            <thead>Cuadro de procedimiento (interés simple)</thead>
+        <button class="in"><a href="#ind">Indice</a></button>
+        <br/><br/>
+        <table border="2" class="comp">
+            <tr>
+                <th colspan="4" id="SoluIntSim">Resolver ejercicios de Interés Simple</th>
+            </tr>
+            <tr>
+                <td onclick="valorFutSim();">Valor Futuro (S)</td>
+                <td onclick="valorPreS();">Valor Presente (P)</td>
+                <td onclick="interesSimp();">Interes Simple (i)</td>
+                <td onclick="tiempoSimple();">Tiempo (n)</td>
+            </tr>
+            <tr>
+                <td id="valFuturoSim"><br/></td>
+                <td id="valPresenSim"></td>
+                <td id="interesSimple"></td>
+                <td id="tiempoSim"></td>
+            </tr>
+        </table>
+        
+        <table border="2" class="comp">
+            <tr>
+                <th colspan="2">Cuadro de procedimiento (interés simple)</th>
+            </tr>
             <tr>
                 <th>Procedimiento valor futuro</th>
-                <td id="qh"><br/></td>
+                <td id="proceFut"><br/></td>
             </tr>
             <tr>
                 <th>Procedimiento valor presente</th>
-                <td id="proce"><br/></td>
+                <td id="procePre"><br/></td>
             </tr>
             <tr>
                 <th>Procedimiento del interés simple</th>
-                <td id="proceInte"><br/></td>
+                <td id="proceInteS"><br/></td>
             </tr>
             <tr>
                 <th>Procedimiento del tiempo</th>
-                <td id="proceTiempo"><br/></td>
+                <td id="proceTiempS"><br/></td>
             </tr>
         </table>
-        <br/>
-        <br/>
-        <div id="mateFinanTodo">
-            <h1 align="center"><a>¿Qué es Matematicas Financieras?</a></h1>
-            <p class="parrMatFin">Las matemáticas financieras son el campo de las matemáticas aplicadas que analizan, valoran y calculan materias relacionadas con los mercados financieros, y especialmente, el valor del dinero en el tiempo. Se ocupan del cálculo del valor, el tipo de interés o rentabilidad de los distintos productos que existen en los mercados financieros como depósitos, bonos, préstamos, descuentos de papel, valoración de acciones o cálculos sobre seguros, entre otras. <br/>
-            Las matemáticas financieras se centran en estudiar el valor del dinero en el tiempo combinando el capital, la tasa y el tiempo para obtener un rendimiento o interés, a través de métodos de evaluación que permiten tomar decisiones de inversión. Entre las herramientas más utilizadas para dichos análisis, encontramos la probabilidad, la estadística y el cálculo diferencial.
-            </p>
-            <h2>Términos que debes conocer</h2>
-            
-            <p class="parrMatFin">
-            Si decides estudiar el máster en finanzas es necesario que conozcas ciertos términos y así poder hablar la jerga específica de esta rama de las matemáticas.
-            <p id="parrafo">
-            ➤Las derivadas climáticas. Los productos financieros y su flujo dependen de un evento climático (aplicadas a menudo a las empresas agrícolas y turísticas)
-            <br/>
-            ➤Las derivadas de crédito. Los productos y su flujo dependen de eventos de crédito
-            <br/>
-            ➤Los intereses de los préstamos bancarios. Fluctúan en función del coste del dinero y del riesgo de impago del prestatario.
-            <br/>
-            ➤El coste del dinero. Pedir un préstamo tiene un coste que depende de lo que se denomina la curva de tipos de interés. Esta famosa curva va en función de la moneda y la fija generalmente el mercado.
-            <br/>
-            ➤El coste del riesgo. Es la manera en la que la banca compensa el riesgo de impago. Se proponen dos formas, la hipoteca y la prima de riesgo adicional.
-            <br/>
-            ➤Los intereses. Existen 2 tipos de intereses que se incluyen en la composición de las matemáticas financieras: el interés simple que ilustra la noción de interés en el sentido propio, se calcula sobre la base del total de un capital inicial, y el interés compuesto que consiste en tomar en cuenta como base de cálculo el capital inicial y los importes de los intereses que ha ido generando la inversión.
-            </p>
-            Estos son los términos más básicos de matemáticas financieras que se estudian en un máster en finanzas cuantitativas. Pero por si aún te quedan  dudas vamos a contarte con más detalle cómo es el máster.
-            </p>
+        <button class="in"><a href="#ind">Indice</a></button> 
+
+        <br/><br/><br/><br/>
+
+        <table border="2" class="comp">
+            <tr>
+                <th colspan="2" id="convTasas">Conversión de Tasas Efectivas (interés compuesto)</th>
+            </tr>
+            <tr>
+                <td>Conversión de tasa de menor a mayor<br/>Fórmula: i = ((1+i)^n)-1<button onclick="converForMeAma();">Operar</button></td>
+                <td>Conversión de tasa de mayor a menor<br/>Fórmula: i = ((1+i)^1/n) - 1<button onclick="converForMaAme();">Operar</button></td>
+            </tr>
+            <tr>
+                <td id="escrTasMenAmayo"><br/></td>
+                <td id="escrTasMayoAmen"></td>
+            </tr>
         </table>
-        </div>
     </section>
-    
+    <script src="mateF02.js"></script>
     <script src="mateF.js"></script>
 </body>
 </html>
