@@ -1,7 +1,5 @@
 
 
-
-
 var vf = document.getElementById("valorFuturo");
 var vp = document.getElementById("valorPresente");
 var iComp = document.getElementById("interesCompuesto");
@@ -11,6 +9,11 @@ var hacer = document.getElementById("qh");
 var haPro = document.getElementById("proce");
 var hacProInt = document.getElementById("proceInte");
 var hacProTiem = document.getElementById("proceTiempo");
+
+var hacePs = document.getElementById("proceFut");
+var hacePsP = document.getElementById("procePre");
+var hacPsI = document.getElementById("proceInteS");
+var hacPsT = document.getElementById("proceTiempS");
 
 
 function valorFut() 
@@ -142,6 +145,11 @@ var valorPreseS = document.getElementById("valPresenSim");
 var interesSim = document.getElementById("interesSimple");
 var tiempoS = document.getElementById("tiempoSim");
 
+var hacePs = document.getElementById("proceFut");
+var hacePsP = document.getElementById("procePre");
+var hacPsI = document.getElementById("proceInteS");
+var hacPsT = document.getElementById("proceTiempS");
+
 function valorFutSim() 
 {
     VPS(prompt("Escriba el valor presente"), prompt("Escriba el interes simple"), prompt("Escriba el tiempo"));
@@ -162,13 +170,21 @@ function valorFutSim()
         {
             valorFutuS.innerText = valfuts;
         }
+        hacerProce();
+        function hacerProce() 
+        {
+            var escriValPre = "P= " + ValorPresenteS;
+            var escriInteres = "i= " + InteresS;
+            var escriTiempo = "n= " + TiempoS;
+            hacePs.innerText = "S= P(1+i*n)\n" + escriValPre + "\n" + escriInteres + "%\n" + escriTiempo;
+        }
     }
 }
 
 
 function valorPreS() 
 {
-    VFS(prompt("Escriba el valor futuro"), prompt("Escriba el interes compuesto"), prompt("Escriba el tiempo"));
+    VFS(prompt("Escriba el valor futuro"), prompt("Escriba el interes simple"), prompt("Escriba el tiempo"));
     function VFS(ValorFuturoS, interesS, tiempoSi) 
     {
         ValorFuturoS = parseFloat(ValorFuturoS);
@@ -181,6 +197,14 @@ function valorPreS()
         function escribirVF(valpre) 
         {
             valorPreseS.innerText = valpre;
+        }
+        hacerProce();
+        function hacerProce() 
+        {
+            var escriValFut = "S= " + ValorFuturoS;
+            var escriInteres = "i= " + interesS;
+            var escriTiempo = "n= " + tiempoSi;
+            hacePsP.innerText = escriValFut + "\n" + "P= S/(1+i*n)" + "\n" + escriInteres + "%\n" + escriTiempo;
         }
     }
 }
@@ -203,6 +227,14 @@ function interesSimp()
         {
             interesSim.innerText = interesc;
         }
+        hacerProce();
+        function hacerProce() 
+        {
+            var escriValPre = "P= " + ValorPresenteSim;
+            var escriFut = "S= " + valorFuturoS;
+            var escriTiempo = "n= " + tiempoSimp;
+            hacPsI.innerText = escriFut + "\n" + escriValPre + "\n" + "i= ((S/P)-1)/n\n" + escriTiempo;
+        }
     }
 }
 
@@ -222,6 +254,14 @@ function tiempoSimple()
         function escribirVF(times) 
         {
             tiempoS.innerText = times;
+        }
+        hacerProce();
+        function hacerProce() 
+        {
+            var escriValPre = "P= " + ValorPresenteSimple;
+            var escriFut = "S= " + valorFuturoSim;
+            var escriInter = "i= " + intereSimple;
+            hacPsT.innerText = escriFut + "\n" + escriValPre + "\n" + escriInter + "%"  + "\nn= ((S/P)-1)/i";
         }
     }
 }
