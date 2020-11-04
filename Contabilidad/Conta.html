@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Santiago Jair Torres Rivera">
+    <meta name="autor" content="Santiago Jair Torres Rivera">
     <link rel="stylesheet" href="../estilo.css">
     <link rel="stylesheet" href="diseño.css">
     <title>Contabilidad</title>
@@ -67,6 +67,7 @@
                 <li><a href="#verReco">Ver Reconocimiento.</a></li>
                 <li><a href="#dePsuD">Depreciación por suma de digitos para autos.</a></li>
                 <li><a href="#dePsuD2">Depreciación por suma de dígitos para casas y oficinas</a></li>
+                <li><a href="#depLineaRecta">Depreciación por línea recta</a></li>
                 <br/>
             </ol>
         </div>
@@ -208,10 +209,52 @@
                 <td id="escrOperacionesTot"><br/></td>
             </tr>
         </table>
+
+        <br/><br/><br/>
+
+        <table border="2" class="tabDepDigi">
+            <tr>
+                <th colspan="2" id="depLineaRecta" align="center">Depreciación por línea recta</th>
+            </tr>
+            <tr>
+                <td class="negra">Fecha Inicial <button onclick="diasDep();">Operar</button></td>
+                <td id="fechInic" class="extender"><br/></td>
+            </tr>
+            <tr>
+                <td class="negra">Fecha Final</td>
+                <td id="fechFin"><br/></td>
+            </tr>
+            <tr>
+                <td class="negra">Número de días a depreciar</td>
+                <td id="dias"><br/></td>
+            </tr>
+            <tr>
+                <td class="negra">Valor del bien</td>
+                <td id="valBien"><br/></td>
+            </tr>
+            <tr>
+                <td class="negra">IVA 19% <button onclick="sacIvaTot();">Operar</button></td>
+                <td id="escIVA"><br/></td>
+            </tr>
+            <tr>
+                <td class="negra">Total</td>
+                <td id="totalTod"><br/></td>
+            </tr>
+            <tr>
+                <td class="negra">Depreciación acumulada <button onclick="sacDepAcumu();">Operar</button></td>
+                <td id="depreciAcumulada"></td>
+            </tr>
+            <tr>
+                <td class="negra">Saldo en libros</td>
+                <td id="saldoLib"><br/></td>
+            </tr>
+        </table>
     </section>
     <script src="depSum2.js"></script>
     <script src="cont.js"></script>
     <script src="contaReco.js"></script>
     <script src="depSumDigi.js"></script>
+    <script src="estaDeResult.js"></script>
+    <script src="depLinRect.js"></script>
 </body>
 </html>
